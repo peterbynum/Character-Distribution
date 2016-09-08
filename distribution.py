@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Peter Bynum
-Credit: None
+Credit: Mr. Dennison's sorting system
 Assignment: Character Distribution
 
 Write and submit a Python program (distribution.py) that computes and displays 
@@ -36,11 +36,52 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 
-string = input("Please enter a string of text (the bigger the better): ")
+s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is:')
+alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+alphanum = []
+
+for i in range(0,25):
+    alphanum.append(s.count(alpha[i]))
+
+sorted = False
+
+def compare(a, b):
+    return a > b
+
+While sorted = False:
+    for i in range(0,25)
+        if compare(alphanum[i], alphanum[i+1])==True
 
 
+"""
+goes through alphabet and switches when > or <
 
+def compare(s.count[i], s.count[i+1]):
+    return b > a
+
+for i in range(0,25):
+    if 
+
+def compare(s.count[i], b):
+    return b > a
+
+
+def bsort(seq, compare):
+    sorted = False  # assume the seq is not sorted to start with
+    while not sorted:
+        sorted = True   # assume it's already sorted correctly
+        for index, value in enumerate(seq): # for every element in seq
+            if index > 0:                   # past the first..
+                if not cmp(seq[index-1], value):  # if this element is out of order
+                    sorted = False          # then the list is not sorted yet
+                    seq[index-1], seq[index] = seq[index], seq[index-1] # and swap it
+
+
+tosort = [4, 10, 3, -1000, 30]
+bsort(tosort, compare)
+print(tosort)
+"""
 
 
 

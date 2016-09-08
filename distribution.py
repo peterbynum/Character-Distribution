@@ -40,6 +40,7 @@ s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is:'.format(s))
 a = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 anum = []
+anum1 = []
 
 for i in range(0,25):
     anum.append(s.count(a[i]))
@@ -51,13 +52,17 @@ def compare(x, y):
 
 while not sorted:
     for i in range(0,24):
-        if compare(anum[i], anum[i+1])
+        if compare(anum[i], anum[i+1]):
             anum[i], anum[i+1] = anum[i+1], anum[i]
             a[i], a[i+1] = a[i+1], a[i]
-            if anum == anum.sort():
+            anum = anum1
+            anum1.sort()
+            if anum == anum1:
                 sorted = True
         else:
-            if anum == anum.sort():
+            anum = anum1
+            anum1.sort()
+            if anum == anum1:
                 sorted = True
 
 """

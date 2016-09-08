@@ -1,9 +1,8 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
-
-Assignment:
+Author: Peter Bynum
+Credit: None
+Assignment: Character Distribution
 
 Write and submit a Python program (distribution.py) that computes and displays 
 the distribution of characters in a given sample of text.
@@ -36,3 +35,13 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+
+string = input("Please enter a string of text (the bigger the better): ")
+print('The distribution of characters in "{0}" is:')
+
+
+
+
+
+
+

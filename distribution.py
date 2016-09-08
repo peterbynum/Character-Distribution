@@ -51,7 +51,7 @@ def compare(x, y):
     return y > x
 
 while not sorted:
-    for j in range(0,24):
+    for j in range(0,23):
         if compare(anum[j], anum[j+1]):
             anum[j], anum[j+1] = anum[j+1], anum[j]
             a[j], a[j+1] = a[j+1], a[j]

@@ -37,22 +37,28 @@ Notice about this example:
 """
 
 s = input("Please enter a string of text (the bigger the better): ")
-print('The distribution of characters in "{0}" is:')
-alpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-alphanum = []
+print('The distribution of characters in "{0}" is:'.format(s))
+a = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+anum = []
 
 for i in range(0,25):
-    alphanum.append(s.count(alpha[i]))
+    anum.append(s.count(a[i]))
 
 sorted = False
 
-def compare(a, b):
-    return a > b
+def compare(x, y):
+    return x > y
 
-While sorted = False:
-    for i in range(0,25)
-        if compare(alphanum[i], alphanum[i+1])==True
-
+while not sorted:
+    for i in range(0,24):
+        if compare(anum[i], anum[i+1])
+            anum[i], anum[i+1] = anum[i+1], anum[i]
+            a[i], a[i+1] = a[i+1], a[i]
+            if anum == anum.sort():
+                sorted = True
+        else:
+            if anum == anum.sort():
+                sorted = True
 
 """
 goes through alphabet and switches when > or <

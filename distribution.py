@@ -48,14 +48,14 @@ for i in range(0,25):
 sorted = False
 
 def compare(x, y):
-    return x > y
+    return y > x
 
 while not sorted:
-    for i in range(0,24):
-        if compare(anum[i], anum[i+1]):
-            anum[i], anum[i+1] = anum[i+1], anum[i]
-            a[i], a[i+1] = a[i+1], a[i]
-            anum = anum1
+    for j in range(0,24):
+        if compare(anum[j], anum[j+1]):
+            anum[j], anum[j+1] = anum[j+1], anum[j]
+            a[j], a[j+1] = a[j+1], a[j]
+            anum1 = anum
             anum1.sort()
             if anum == anum1:
                 sorted = True

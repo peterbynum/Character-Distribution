@@ -64,6 +64,9 @@ while not sorted:
             anum1.sort()
             if anum == anum1:
                 sorted = True
+a.sort([::-1])
+anum.sort([::-1])
+
 
 """
 goes through alphabet and switches when > or <

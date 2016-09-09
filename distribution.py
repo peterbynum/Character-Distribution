@@ -42,7 +42,7 @@ a = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s'
 anum = []
 anum1 = []
 
-for i in range(0,25):
+for i in range(0,26):
     anum.append(s.count(a[i]))
 
 sorted = False
@@ -60,7 +60,7 @@ while not sorted:
             if anum == anum1:
                 sorted = True
         else:
-            anum = anum1
+            anum1 = anum
             anum1.sort()
             if anum == anum1:
                 sorted = True

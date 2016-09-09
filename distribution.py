@@ -55,12 +55,12 @@ while not sorted:
         if compare(anum[j], anum[j+1]):
             anum[j], anum[j+1] = anum[j+1], anum[j]
             a[j], a[j+1] = a[j+1], a[j]
-            anum1 = anum
+            anum1 = list(anum)
             anum1.sort()
             if anum == anum1:
                 sorted = True
         else:
-            anum1 = anum
+            anum1 = list(anum)
             anum1.sort()
             if anum == anum1:
                 sorted = True

@@ -48,10 +48,10 @@ for i in range(0,26):
 sorted = False
 
 def compare(x, y):
-    return y > x
+    return x > y
 
 while not sorted:
-    for j in range(0,24):
+    for j in range(0,25):
         if compare(anum[j], anum[j+1]):
             anum[j], anum[j+1] = anum[j+1], anum[j]
             a[j], a[j+1] = a[j+1], a[j]

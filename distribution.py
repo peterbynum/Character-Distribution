@@ -2,6 +2,7 @@
 distribution.py
 Author: Peter Bynum
 Credit: Mr. Dennison's sorting system
+Making lists lowercase: http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 Assignment: Character Distribution
 
 Write and submit a Python program (distribution.py) that computes and displays 
@@ -39,11 +40,13 @@ Notice about this example:
 s = input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "{0}" is:'.format(s))
 a = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+arev = list(a[::-1])
 anum = []
 anum1 = []
+s = s.lower()
 
 for i in range(0,26):
-    anum.append(s.count(a[i]))
+    anum.append(s.count(arev[i]))
 
 sorted = False
 
@@ -54,7 +57,7 @@ while not sorted:
     for j in range(0,25):
         if compare(anum[j], anum[j+1]):
             anum[j], anum[j+1] = anum[j+1], anum[j]
-            a[j], a[j+1] = a[j+1], a[j]
+            arev[j], arev[j+1] = arev[j+1], arev[j]
             anum1 = list(anum)
             anum1.sort()
             if anum == anum1:
@@ -68,7 +71,7 @@ while not sorted:
 
 for i in range(0,25):
     if anum[25-i]>0:
-        print(a[25-i]*anum[25-i])
+        print(arev[25-i]*anum[25-i])
 
 
 

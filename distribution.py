@@ -64,8 +64,13 @@ while not sorted:
             anum1.sort()
             if anum == anum1:
                 sorted = True
-a.sort([::-1])
-anum.sort([::-1])
+
+
+for i in range(0,25):
+    if anum[25-i]>0:
+        print(a[25-i]*anum[25-i])
+
+
 
 
 """
